@@ -5,4 +5,4 @@ The categorization requires three things including Chromosome number, start and 
 In GFBLUP, we generally categorize SNPs into two categories, selected and remaining. However, even categories are possible based on biological importance or anyother supported information. 
 GFBLUP considers selected and remaining categories to be independent from each other, i.e., they don't share SNPs with each other. However, if we are using multiple pieces of biological information, it means we can perform GFBLUP for each of the biological feature, and in that cases SNPs can be shared between different features; however, selected and remaining SNPs categories remain independent from each other.
 
-The R based algorithm to perform SNP categorization can be found in the file "SNP_cats.R"
+The R based algorithm to perform SNP categorization can be found in the file "kin_maker.R"
