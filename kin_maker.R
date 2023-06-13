@@ -5,7 +5,7 @@ library(sommer)
 ### read the map file
 map_v4 <- data.table::fread("~/work/AGPv4_Annotations/map_v4.txt") ###this is the map file with atleast 4 columns, Chr, Start, End, and SNP_ID
 ### read the marker data
-markers <- readRDS("~/save/PhD_work/Genotypes/GenotypeMat.RDS") ####marker data, needs to be in -1,0,1 for Sommer package. Can also be 0,1,2 if you decide to use a different package for kinship calculation
+markers <- readRDS("~/save/PhD_work/Genotypes/GenotypeMat.RDS") ####marker data (nxm), needs to be in -1,0,1 for Sommer package. Can also be 0,1,2 if you decide to use a different package for kinship calculation
 #markers <- markers-1 #changing to -1, 0, and 1 as required by A.mat in the sommer package
 ### read evolutionary constraints data
 evo_cons <- read.csv("bloc_synthese2.csv",sep = ";") #the dataframe that contains biological information
